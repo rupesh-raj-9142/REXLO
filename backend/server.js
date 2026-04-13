@@ -46,6 +46,7 @@ app.use('/api/wallet', require('./routes/wallet'));
 app.use('/api/match', require('./routes/match'));
 app.use('/api/payment', require('./routes/payment'));
 app.use('/api/game', require('./routes/game'));
+app.use('/api/admin', require('./routes/admin'));
 
 // Socket.io for Real-time Matchmaking
 const waitingRoom = new Map(); // userId -> { socketId, entryFee, gameId }

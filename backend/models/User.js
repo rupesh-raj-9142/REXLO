@@ -45,6 +45,28 @@ const userSchema = new mongoose.Schema({
   freezeReason: {
     type: String
   },
+  isAdmin: {
+    type: Boolean,
+    default: false
+  },
+  isBanned: {
+    type: Boolean,
+    default: false
+  },
+  fraudScore: {
+    type: Number,
+    default: 0,
+    min: 0,
+    max: 1
+  },
+  lastLogin: {
+    type: Date,
+    default: Date.now
+  },
+  isActive: {
+    type: Boolean,
+    default: true
+  },
   kycVerified: {
     type: Boolean,
     default: false

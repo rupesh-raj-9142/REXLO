@@ -1,0 +1,18 @@
+{
+  "name": "rexlo-gaming-platform",
+  "version": "1.0.0",
+  "description": "A full-stack gaming platform for multiplayer Ludo and Carrom games",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["gaming", "multiplayer", "ludo", "carrom", "react", "nodejs"],
+  "author": "Rexlo Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
